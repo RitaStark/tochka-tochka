@@ -1,0 +1,54 @@
+.goods__wrapper {
+    max-width: 353px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.goods__item--type {
+    width: 100%;
+
+    & select {
+        width: 100%;
+    }
+}
+
+.goods__item--hazard,
+.goods__item--value {
+    width: 49%;
+}
+
+.goods__item--value input {
+    border: none;
+    padding: 0;
+    height: 44px;
+    width: 100%;
+
+    &::placeholder {
+        padding-left: 10px;
+        font-size: 15px;
+        color: #cfcfcf;
+    }
+}
+
+.goods__item h4 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.goods__item select {
+    height: 44px;
+    width: 100%;
+}
+
+.goods__item-checkbox {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.goods label {
+    font-size: 13px;
+}

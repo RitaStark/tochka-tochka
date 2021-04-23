@@ -1,0 +1,14 @@
+.form-item__par {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-top: 15px;
+
+    & input {
+        height: 44px;
+    }
+
+    & label {
+        margin-bottom: 7px;
+    }
+}

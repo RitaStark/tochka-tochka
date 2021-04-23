@@ -1,0 +1,77 @@
+.order-form {
+    background-color: #343539;
+    overflow: hidden;
+}
+
+.order-form h1 {
+    margin-left: 167px;
+    color: #ffffff;
+    font-size: 56px;
+}
+
+.order-form__item {
+    position: relative;
+    margin-bottom: 25px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: red;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.order-form__item h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 30px;
+}
+
+.order-form__number {
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+.order-form__input {
+    height: 44px;
+    width: 100%;
+}
+
+.order-form__input::placeholder {
+    padding-left: 45px;
+    font-size: 15px;
+}
+
+.order-form__comment p {
+    margin-bottom: 7px;
+}
+
+.order-form__comment textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 0;
+    border: 0;
+}
+
+.order-form__comment textarea::placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.order-form__text {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-form__text p + p {
+    color: #cfcfcf;
+}

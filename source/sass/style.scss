@@ -1,3 +1,7 @@
-h1 {
-  color: red;
-}
+@import "blocks/form-item";
+@import "blocks/transport";
+@import "blocks/goods";
+@import "blocks/order-form";
+@import "blocks/common";
+@import "blocks/time";
+@import "mixins";
