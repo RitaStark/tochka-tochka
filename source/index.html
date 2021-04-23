@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Точка-точка</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <section class="order-form">
+    <h1>FTL: Прямая машина</h1>
+    <form action="#" method="post">
+
+      <div class="order-form__item form-item">
+        <p class="order-form__number">1</p>
+        <fieldset>
+          <h3>Маршрут</h3>
+          <div class="form-item__par">
+            <label for="route">Откуда</label>
+            <input type="text" name="size" id="route" value="">
+          </div>
+          <div div class="form-item__par">
+            <label for="route_2">Куда</label>
+            <input type="text" name="size" id="route_2" value="">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="order-form__item transport">
+        <p class="order-form__number">2</p>
+        <h3>Транспорт</h3>
+        <div class="transport__list-wrapper">
+          <div class="transport__list">
+            <h4>Грузоподъёмность</h4>
+            <select>
+              <option selected>Не выбрана</option>
+              <option>Вариант 1</option>
+              <option>Вариант 2</option>
+              <option>Вариант 3</option>
+              <option>Вариант 4</option>
+              <option>Вариант 5</option>
+            </select>
+          </div>
+
+          <div class="transport__list">
+            <h4>Способ погрузки</h4>
+            <select>
+              <option selected>Задняя</option>
+              <option>Вариант 2</option>
+              <option>Вариант 3</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-form__item goods">
+        <p class="order-form__number">3</p>
+        <h3>Груз</h3>
+        <div class="goods__wrapper">
+          <div class="goods__item goods__item--type">
+            <h4>Тип груза</h4>
+            <select>
+              <option selected>Не выбран</option>
+              <option>Вариант 1</option>
+              <option>Вариант 2</option>
+              <option>Вариант 3</option>
+            </select>
+          </div>
+
+          <div class="goods__item goods__item--hazard">
+            <h4>Класс опасности</h4>
+            <select>
+              <option>Вариант 1</option>
+              <option>Вариант 2</option>
+              <option>Вариант 3</option>
+            </select>
+          </div>
+
+          <div class="goods__item goods__item--value">
+            <h4>Объявленная ценность, &#8399;</h4>
+            <input type="text" placeholder="&#8805; 1">
+          </div>
+
+        </div>
+
+        <input id="goods__item-check" class="goods__item-checkbox" type="checkbox" name="name">
+        <label for="goods__item-check">Требуется температурный режим</label>
+      </div>
+
+      <div class="order-form__item time">
+        <p class="order-form__number">4</p>
+        <h3>Время</h3>
+        <div class="order-form__text">
+          <p>Когда прибыть на точку</p>
+          <p>700 км в день</p>
+        </div>
+        <div class="time__wrapper">
+          <div class="time__item">
+            <input id="order-form__text" class="order-form__input" type="text" name="name"
+              placeholder="Адрес не указан">
+            <label for="order-form__text"></label>
+            <p class="time__not-choosen">не выбрано</p>
+          </div>
+
+          <div class="time__item">
+            <input id="order-form__text" class="order-form__input" type="text" name="name"
+              placeholder="Адрес не указан">
+            <label for="order-form__text"></label>
+            <p class="time__not-choosen">не выбрано</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="order-form__comment">
+        <p>Комментарий к заказу</p>
+        <textarea placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+      </div>
+  </section>
+  </form>
+
+
 </body>
+
 </html>
