@@ -23,6 +23,21 @@
         border: 5px solid #ef483e;
         border-radius: 50%;
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #4b4b4f 50%);
+    }
+}
+
+.time__item input[type="text"] {
+    padding-left: 50px;
+    color: #ffffff;
 }
 
 .time__wrapper .time__item + .time__item {
@@ -43,8 +58,17 @@
     padding: 5px 10px;
     margin: 0;
     border-radius: 3px;
+    z-index: 10;
 
     &:hover {
         opacity: 1;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .time__item {
+        &::after {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #4b4b4f 20%);
+        }
     }
 }
