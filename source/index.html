@@ -87,8 +87,31 @@
 
         </div>
 
+
+        <div class="goods__temperature temperature">
+
+          <div class="temperature__item temperature__item--temp-mode">
         <input id="goods__item-check" class="goods__item-checkbox" type="checkbox" name="name">
         <label for="goods__item-check">Требуется температурный режим</label>
+      </div>
+
+          <div class="temperature__wrapper visually-hidden">
+            <div class="temperature__item temperature__item--temp">
+
+              <div>
+                <label for="goods__temp-from">От, &#8451;</label>
+                <input id="goods__temp-from" type="number" placeholder="&#8805; 1">
+              </div>
+
+              <div>
+                <label for="goods__temp-to">До, &#8451;</label>
+                <input id="goods__temp-to" type="number" placeholder="&#8805; 1">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
       <div class="order-form__item time">

@@ -1,15 +1,17 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var tempWrapper = document.querySelector('.temperature__wrapper');
+var tempCheckbox = document.querySelector('.goods__item-checkbox');
+console.log(tempWrapper)
 
-pageHeader.classList.remove('page-header--nojs');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+
+tempCheckbox.addEventListener('click', function () {
+  if (tempCheckbox.checked) {
+    tempWrapper.classList.remove('visually-hidden');
+    tempWrapper.classList.add('visible');
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    tempWrapper.classList.remove('visible');
+    tempWrapper.classList.add('visually-hidden');
   }
 });
+

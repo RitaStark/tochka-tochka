@@ -1,0 +1,34 @@
+.temperature {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 353px;
+}
+
+.temperature__item--temp-mode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & input {
+        margin-top: 0;
+    }
+}
+
+.temperature__item--temp {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.temperature__item--temp div {
+    width: 49%;
+}
+
+.temperature__item--temp div input {
+    width: 100%;
+}
+
+.temperature__item--temp-mode input:checked .goods__temperature-wrapper {
+    display: block;
+}
