@@ -4,9 +4,10 @@
 }
 
 .order-form h1 {
-    margin-left: 167px;
     color: #ffffff;
     font-size: 56px;
+
+    @include margin-left-167;
 }
 
 .order-form__item {
@@ -40,13 +41,15 @@
 }
 
 .order-form__input {
-    height: 44px;
     width: 100%;
+
+    @include entry-field-height;
 }
 
 .order-form__input::placeholder {
-    padding-left: 45px;
-    font-size: 15px;
+    padding-left: 0;
+
+    @include font-15;
 }
 
 .order-form__comment p {
@@ -56,22 +59,37 @@
 .order-form__comment textarea {
     width: 100%;
     min-height: 80px;
-    padding: 0;
+    padding: 10px;
     border: 0;
 }
 
 .order-form__comment textarea::placeholder {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 0;
+    color: #cfcfcf;
     font-family: "Helvetica Neue", "Arial", sans-serif;
+
+    @include font-15;
 }
 
 .order-form__text {
-    font-size: 13px;
     display: flex;
     justify-content: space-between;
+
+    @include font-13;
 }
 
 .order-form__text p + p {
     color: #cfcfcf;
+}
+
+@media (max-width: $tablet-width) {
+    .order-form h1 {
+        font-size: 32px;
+
+        @include margin-left-18;
+    }
+
+    .order-form__item h3 {
+        font-size: 20px;
+    }
 }
