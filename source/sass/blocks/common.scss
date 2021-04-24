@@ -10,8 +10,29 @@ fieldset {
 form {
     max-width: 731px;
     color: #ffffff;
-    margin-left: 167px;
     padding-bottom: 150px;
     font-family: "Helvetica Neue", "Arial", sans-serif;
     margin-right: 30px;
+
+    @include margin-left-167;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+@media (max-width: $tablet-width) {
+    form {
+        margin-right: 18px;
+
+        @include margin-left-18;
+    }
 }
