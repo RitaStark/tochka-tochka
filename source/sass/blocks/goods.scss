@@ -15,6 +15,10 @@
     }
 }
 
+.goods__item input[type="text"] {
+    padding-left: 10px;
+}
+
 .goods__item--hazard,
 .goods__item--value {
     width: 49%;
@@ -23,25 +27,30 @@
 .goods__item--value input {
     border: none;
     padding: 0;
-    height: 44px;
     width: 100%;
 
+    @include entry-field-height;
+
     &::placeholder {
-        padding-left: 10px;
-        font-size: 15px;
+        padding-left: 0;
         color: #cfcfcf;
+
+        @include font-15;
     }
 }
 
 .goods__item h4 {
-    font-size: 13px;
     font-weight: 400;
     margin-bottom: 7px;
+
+    @include font-13;
 }
 
 .goods__item select {
-    height: 44px;
     width: 100%;
+
+    @include entry-field-height;
+    @include font-15;
 }
 
 .goods__item-checkbox {
@@ -50,5 +59,9 @@
 }
 
 .goods label {
-    font-size: 13px;
+    @include font-13;
+}
+
+.goods__temperature input {
+    @include entry-field-height;
 }
