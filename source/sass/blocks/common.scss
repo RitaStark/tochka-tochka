@@ -10,9 +10,10 @@ fieldset {
 form {
     max-width: 731px;
     color: #ffffff;
-    padding-bottom: 150px;
+    padding-bottom: 350px;
     font-family: "Helvetica Neue", "Arial", sans-serif;
     margin-right: 30px;
+    position: relative;
 
     @include margin-left-167;
 }
