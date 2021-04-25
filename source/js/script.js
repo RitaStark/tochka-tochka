@@ -15,3 +15,19 @@ tempCheckbox.addEventListener('click', function () {
   }
 });
 
+
+document.querySelectorAll('.transport__select').forEach(function (elem) {
+  new SlimSelect({
+    showSearch: false,
+    select: elem,
+  });
+});
+
+document.querySelectorAll('.goods__select').forEach(function (elem) {
+  new SlimSelect({
+    showSearch: false,
+    select: elem,
+  });
+})
+
+

@@ -65,3 +65,15 @@
 .goods__temperature input {
     @include entry-field-height;
 }
+
+div.goods__select {
+    .ss-single-selected {
+        border-radius: 0;
+        @include entry-field-height;
+    }
+    .ss-list .ss-option {
+        &:hover {
+            background-color: red;
+        }
+    }
+}

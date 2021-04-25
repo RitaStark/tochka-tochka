@@ -5,14 +5,6 @@
 .transport__list {
     list-style-type: none;
     width: 50%;
-
-    & select {
-        width: 100%;
-        cursor: pointer;
-
-        @include entry-field-height;
-        @include font-15;
-    }
 }
 
 .transport__list-wrapper {
@@ -27,4 +19,16 @@
     margin-bottom: 7px;
 
     @include font-13;
+}
+
+div.transport__select {
+    .ss-single-selected {
+        border-radius: 0;
+        @include entry-field-height;
+    }
+    .ss-list .ss-option {
+        &:hover {
+            background-color: red;
+        }
+    }
 }
