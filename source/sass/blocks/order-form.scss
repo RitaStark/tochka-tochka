@@ -82,6 +82,25 @@
     color: #cfcfcf;
 }
 
+.order-form__info {
+    position: absolute;
+    max-width: 356px;
+    background-color: #4b4b4f;
+    top: 0;
+    right: -378px;
+    padding: 24px;
+
+    @include font-15;
+}
+
+.order-form_info p {
+    margin: 0;
+}
+
+.order-form__info--mobile {
+    display: none;
+}
+
 @media (max-width: $tablet-width) {
     .order-form h1 {
         font-size: 32px;
@@ -91,5 +110,26 @@
 
     .order-form__item h3 {
         font-size: 20px;
+    }
+
+    .order-form__info {
+        display: none;
+    }
+
+    .order-form__comment {
+        position: relative;
+    }
+
+    .order-form__info--mobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #4b4b4f;
+        top: 145px;
+        left: 0;
+        padding: 24px;
+        margin-right: 18px;
+
+        @include font-15;
     }
 }

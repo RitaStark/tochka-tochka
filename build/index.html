@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Точка-точка</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
+
 </head>
 
 <body>
@@ -27,11 +31,7 @@
             <input type="text" name="size" id="route_2" value="">
           </div>
         </fieldset>
-        <div class="form-item__info">
-          <p>
-            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
-          </p>
-        </div>
+
       </div>
 
       <div class="order-form__item transport">
@@ -41,21 +41,21 @@
           <div class="transport__list">
             <h4>Грузоподъёмность</h4>
             <select class="transport__select">
-              <option class="selected" selected="">Не выбрана</option>
-              <option>Вариант 1</option>
-              <option>Вариант 2</option>
-              <option>Вариант 3</option>
-              <option>Вариант 4</option>
-              <option>Вариант 5</option>
+              <option class="transport__option" selected="">Не выбрана</option>
+              <option class="transport__option">Вариант 1</option>
+              <option class="transport__option">Вариант 2</option>
+              <option class="transport__option">Вариант 3</option>
+              <option class="transport__option">Вариант 4</option>
+              <option class="transport__option">Вариант 5</option>
             </select>
           </div>
 
           <div class="transport__list">
             <h4>Способ погрузки</h4>
-            <select>
-              <option selected="">Задняя</option>
-              <option>Вариант 2</option>
-              <option>Вариант 3</option>
+            <select class="transport__select">
+              <option class="transport__option" selected="">Задняя</option>
+              <option class="transport__option">Вариант 2</option>
+              <option class="transport__option">Вариант 3</option>
             </select>
           </div>
 
@@ -68,7 +68,7 @@
         <div class="goods__wrapper">
           <div class="goods__item goods__item--type">
             <h4>Тип груза</h4>
-            <select>
+            <select class="goods__select">
               <option selected="">Не выбран</option>
               <option>Вариант 1</option>
               <option>Вариант 2</option>
@@ -78,7 +78,7 @@
 
           <div class="goods__item goods__item--hazard">
             <h4>Класс опасности</h4>
-            <select>
+            <select class="goods__select">
               <option>Вариант 1</option>
               <option>Вариант 2</option>
               <option>Вариант 3</option>
@@ -146,6 +146,18 @@
       <div class="order-form__comment">
         <p>Комментарий к заказу</p>
         <textarea placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+
+        <div class="order-form__info--mobile">
+          <p>
+            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+          </p>
+        </div>
+
+      </div>
+      <div class="order-form__info">
+        <p>
+          Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+        </p>
       </div>
   </form></section>
   

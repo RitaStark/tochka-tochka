@@ -2,21 +2,6 @@
     position: relative;
 }
 
-.form-item__info {
-    position: absolute;
-    max-width: 356px;
-    background-color: #4b4b4f;
-    top: 0;
-    right: -378px;
-    padding: 24px;
-
-    @include font-15;
-}
-
-.form-item__info p {
-    margin: 0;
-}
-
 .form-item__par {
     display: flex;
     flex-direction: column;
